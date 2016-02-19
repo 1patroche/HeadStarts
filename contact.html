@@ -1,0 +1,97 @@
+<!DOCTYPE html><!-- HTML5 DOCTYPE declaration -->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HeadStarts/Contact Us</title>
+    <meta name="description" content="Everything you need to get a head start in college life"><!-- meta description tag for SEO purposes -->
+	<meta name="keywords" content="head, starts, college, courses, home, study, cooking, google, life, college life"><!-- meta keyword tags for SEO purposes -->
+	<meta name="author" content="Patrick Roche"><!-- meta autor tag for SEO purposes -->
+    <meta name="viewport" content="width=device-width"><!-- define the default viewport width -->
+	<link rel="stylesheet" href="css/normalise.min.css"><!--  render all elements more consistently in line with modern standards. -->
+	<link rel="stylesheet" href="css/style.css"><!-- main stylesheet -->
+		
+</head>
+<body>
+	<div class="header-container"><!-- main header area -->
+        <header class="wrapper clearfix">
+			<a href="index.html">
+				<img src="img/studystuff2_2.jpg" alt="Study" class="logo-img" /><!-- logo is clickable as a home link in header of all pages -->
+            	<span class="title">HeadStarts</span>
+			</a>			
+            <nav><!-- top navigation - runs horizontal across top of page -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+					<li><a href="contact.html" class="active">Contact Us</a></li><!-- class active shows user what is the active page in the nav -->
+                </ul><!-- end ul -->
+            </nav><!-- end nav -->
+        </header><!-- end header -->
+    </div><!-- end header-container -->
+
+    <div class="main-container"><!-- main content area -->
+        <div class="main wrapper clearfix">
+			<form action="mailto:1patroche@gmail.com" method="post" enctype="text/plain" class="form"><!-- mailto action will send form result as email on submission -->
+				<h1>Contact Us</h1><!-- Single h1 tag on the page for SEO purposes -->
+				<div class="contact-wrapper">
+					<label for="name">Name</label><!-- labels used for accessibility purposes but hidden as not needed for design -->
+		            <input type="text" class="input-group" id="name" name="name" placeholder="Name">
+				</div>
+		        <div class="contact-wrapper">
+					<label for="email">Email</label><!-- labels used for accessibility purposes but hidden as not needed for design -->
+					<input class="input-group" id="email" type="text" name='email' placeholder="E-Mail">
+				</div>
+				<label for="message">Message</label><!-- labels used for accessibility purposes but hidden as not needed for design -->
+				<textarea class="textarea" id="message" name="message" placeholder="Write your message here..." ></textarea>
+				<button class="send-btn"> Send </button>
+			</form><!-- end form -->
+	        <aside><!-- html5 aside - acts as content sidebar -->
+				<br>
+				<h2>How to get in touch</h2>
+				<p>If you would like to get in touch with us about any of the courses on offer or any additional information, please use the contact form provided. Alternatively you can contact us on the following: </p>
+				<!-- mailto link here, if clicked on, will attempt to open a new email in the users default mail client -->
+				<p><strong>Phone: +353 53 9124789 <br /> Mobile: +353 87 1234567 <br />Email: <a href="mailto:info@headstarts.ie">info@headstarts.ie</a></strong></p>
+				<p>You can also find all our social channels at the bottom of the site. Please check these for correct announcements and information.</p>
+			</aside><!-- end aside -->
+        </div> <!-- end main wrapper -->
+    </div> <!-- end main-container -->
+
+    <div class="footer-container"><!-- main footer area -->
+        <footer class="wrapper">
+            <div class="footer-nav"><!-- footer nav -->
+				<ul>
+	                <li><a href="index.html">Home</a></li>
+	                <li><a href="about.html">About Us</a></li>
+	                <li><a href="courses.html">Courses</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="http://1patroche.github.io">Back to Github</a></li>
+	            </ul>
+			</div><!-- end footer-nav -->
+			<div class="footer-social">
+				<div class="footer-tags">
+					<!-- Validator icons -->
+					<!-- Site is Valid for HTML5, CSS and VAI 2.0 AA Accessibility -->
+					<a href="https://validator.w3.org/">
+						<img style="border:0;width:88px;height:31px" src="img/html5.png" alt="Valid HTML!" />
+					</a>
+					<a href="https://validator.w3.org/">
+						<img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss" alt="Valid CSS!" />
+					</a>
+					<a href="http://achecker.ca/checker/index.php">
+						<img style="border:0;width:88px;height:31px" src="img/aaa.png"  alt="Valid Accessibility" />
+					</a>
+				</div><!-- end footer-tags -->
+				<!-- social media icons with CSS hover function -->
+				<a href="#" class="icon icon-mono facebook">facebook</a>
+	        	<a href="#" class="icon icon-mono twitter">twitter</a>
+	        	<a href="#" class="icon icon-mono googleplus">google+</a>
+	        	<a href="#" class="icon icon-mono rss">rss</a>
+			</div><!-- end footer-social -->
+			<div class="footer-copywrite"><!-- default copywrite notice -->
+				<p>&copy;2015 Patrick Roche. ALL RIGHTS RESERVED</p>
+			</div><!-- end footer-copywrite -->
+        </footer><!-- end footer wrapper -->
+    </div><!-- end footer-cntainer -->
+</body>
+</html>	
